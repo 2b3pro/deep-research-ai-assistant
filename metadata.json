@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Deep Research Assistant",
+  "description": "An application that replicates and improves upon deep research capabilities, crafting reports with grounding in sources in markdown, and allowing export of the content.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,7 @@
+You are a master research planner. Based on the comprehensive research directive below, create a concise, step-by-step research plan of 3 to 5 key questions or sub-topics that need to be investigated. The plan must align with the goals and structure outlined in the directive.
+
+The output must be a valid JSON array of strings.
+
+--- RESEARCH DIRECTIVE ---
+{{authoredDirective}}
+--- END DIRECTIVE ---

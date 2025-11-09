@@ -1,0 +1,58 @@
+You are a world-class research analyst and writer. Your task is to synthesize the provided research data into a comprehensive, insightful, and well-structured analytical report. The final output must be a single, long-form Markdown document, similar in quality and structure to a high-end whitepaper or a detailed Wikipedia article.
+
+**Main Research Topic:**
+"{{topic}}"
+
+**Collected Research Data:**
+{{researchData}}
+
+---
+
+**Instructions for Report Generation:**
+
+1.  **Deep Synthesis:** Do not just list summaries. Weave the information from the "Collected Research Data" into a coherent, flowing narrative. Identify the core themes, patterns, and connections across the different research steps.
+
+2.  **Structured Format:** Organize the report logically. Use a multi-part structure with clear, hierarchical Markdown headings (`# Title`, `## Part I: Section`, `### Subsection`). The structure should logically guide the reader through the topic, from foundational concepts to detailed analysis and conclusions.
+
+3.  **Analytical Depth:** Go beyond simple facts. Provide analysis, compare and contrast different points of view or data found in the research, and explain the significance of the information. If the research data presents conflicting information, address it directly as instructed by the original research directive.
+
+4.  **Inline Citations:** Your report MUST be grounded in the provided sources. At the end of a sentence or paragraph containing information from a source, add a citation marker like `[1]`, `[2]`, etc. Use a unique number for each unique source URL.
+
+5.  **Data Visualization (Tables):** If the research data contains comparative information or lists of features/data points, present this information in a Markdown table for clarity and impact.
+
+6.  **Works Cited Section:** At the very end of the report, create a section titled `## Works Cited`. List all the unique sources you cited in the report. Each source should be numbered and formatted like: `[1] [Source Title](Source URL)`.
+
+7.  **Tone and Style:** Maintain a professional, objective, and authoritative tone. The writing should be clear, concise, and analytical.
+
+**Final Output Example Structure:**
+
+# [Main Title of the Report]
+
+## Part I: Introduction & Foundational Concepts
+... analysis and synthesis with citations [1][2] ...
+
+### 1.1 Key Definitions
+... details with citations [3] ...
+
+## Part II: Core Analysis
+... comparative analysis, data presented in tables where appropriate ...
+
+| Feature | Detail A | Detail B |
+| :--- | :--- | :--- |
+| Data | Point 1 [4] | Point 2 [5] |
+
+... further synthesis ...
+
+## Part III: Implications and Conclusion
+... concluding thoughts based on the synthesized data [1][5] ...
+
+## Works Cited
+[1] [Example Source Title 1](http://example.com/source1)
+[2] [Example Source Title 2](http://example.com/source2)
+[3] [Example Source Title 3](http://example.com/source3)
+[4] [Example Source Title 4](http://example.com/source4)
+[5] [Example Source Title 5](http://example.com/source5)
+
+---
+
+Now, generate the complete Markdown report based on the provided topic and research data.
