@@ -6,6 +6,12 @@ import ResearchProgress from './components/ResearchProgress';
 import ReportDisplay from './components/ReportDisplay';
 import { Bot, Zap } from 'lucide-react';
 
+const LoadingBar: React.FC = () => (
+  <div className="fixed top-0 left-0 right-0 h-1 z-50 overflow-hidden bg-indigo-200 dark:bg-slate-700">
+    <div className="animated-progress-bar h-full w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500"></div>
+  </div>
+);
+
 const App: React.FC = () => {
   const [appState, setAppState] = useState<AppState>(AppState.IDLE);
   const [subject, setSubject] = useState<string>('');
@@ -99,8 +105,16 @@ const App: React.FC = () => {
     }
   };
 
+  const isBusy = [
+    AppState.AUTHORING_DIRECTIVE,
+    AppState.PLANNING,
+    AppState.RESEARCHING,
+    AppState.GENERATING_REPORT,
+  ].includes(appState);
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans p-4 sm:p-6 lg:p-8">
+      {isBusy && <LoadingBar />}
       <header className="text-center mb-10">
         <div className="flex items-center justify-center gap-3 mb-2">
             <Bot className="w-10 h-10 text-indigo-500" />

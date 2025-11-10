@@ -21,13 +21,13 @@ const statusIcon = (status: ResearchStep['status']) => {
 const getOverallStatusText = (appState: AppState) => {
     switch (appState) {
         case AppState.AUTHORING_DIRECTIVE:
-            return { text: 'Authoring custom research directive...', icon: <PenSquare className="w-6 h-6 mr-3 text-indigo-500" /> };
+            return { text: 'Authoring custom research directive...', icon: <PenSquare className="w-6 h-6 mr-3 text-indigo-500 animate-pulse" /> };
         case AppState.PLANNING:
-            return { text: 'Generating research plan...', icon: <BrainCircuit className="w-6 h-6 mr-3 text-indigo-500" /> };
+            return { text: 'Generating research plan...', icon: <BrainCircuit className="w-6 h-6 mr-3 text-indigo-500 animate-pulse" /> };
         case AppState.RESEARCHING:
             return { text: 'Executing research steps...', icon: <Loader2 className="w-6 h-6 mr-3 animate-spin text-indigo-500" /> };
         case AppState.GENERATING_REPORT:
-            return { text: 'Synthesizing Knowledge Report...', icon: <Bot className="w-6 h-6 mr-3 text-indigo-500" /> };
+            return { text: 'Synthesizing Knowledge Report...', icon: <Bot className="w-6 h-6 mr-3 text-indigo-500 animate-pulse" /> };
         default:
             return { text: 'Starting research...', icon: <Loader2 className="w-6 h-6 mr-3 animate-spin text-indigo-500" /> };
     }
